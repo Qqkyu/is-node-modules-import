@@ -1,0 +1,3 @@
+function isNodeModulesImport() {
+  return false;
+}
