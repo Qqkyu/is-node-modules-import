@@ -1,11 +1,32 @@
 {
   "name": "is-node-modules-import",
-  "version": "0.0.0",
-  "description": "",
+  "author": "Michał Kuliński <m.kulinskik@gmail.com>"k,
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "Check, if an import path in a given file is a node_modules import",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qqkyu/is-node-modules-import.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Qqkyu/is-node-modules-import/issues"
+  },
+  "engines": {
+    "node": "^18.6.0 || >=16.17.0"
+  },
+  "homepage": "https://github.com/Qqkyu/is-node-modules-import",
+  "keywords": [
+    "import",
+    "require",
+    "modules",
+    "commonjs",
+    "node",
+    "nodejs",
+  ],
   "devDependencies": {
     "jest": "29.7.0",
     "prettier": "3.1.1"
