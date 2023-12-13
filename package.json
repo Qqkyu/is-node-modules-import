@@ -1,6 +1,6 @@
 {
   "name": "is-node-modules-import",
-  "author": "Michał Kuliński <m.kulinskik@gmail.com>"k,
+  "author": "Michał Kuliński <m.kulinskik@gmail.com>",
   "license": "MIT",
   "version": "1.0.0",
   "description": "Check, if an import path in a given file is a node_modules import",
@@ -25,7 +25,7 @@
     "modules",
     "commonjs",
     "node",
-    "nodejs",
+    "nodejs"
   ],
   "devDependencies": {
     "jest": "29.7.0",
