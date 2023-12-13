@@ -35,5 +35,9 @@ describe("isNodeModulesImport", () => {
     test("returns false for project relative node_modules import path", () => {
       expect(isNodeModulesImport("../index.js", "./node_modules/prettier")).toBe(false);
     });
+
+    test("returns true for relative node_modules import path", () => {
+      expect(isNodeModulesImport("../index.js", "./is-node-modules-import/node_modules/prettier")).toBe(true);
+    });
   });
 });
