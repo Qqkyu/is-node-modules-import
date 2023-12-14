@@ -21,6 +21,14 @@ describe("isNodeModulesImport", () => {
     test("returns true for relative node_modules import path", () => {
       expect(isNodeModulesImport(".", "./node_modules/prettier")).toBe(true);
     });
+
+    test("returns true for absolute node_modules import path", () => {
+      expect(isNodeModulesImport(".", `${__dirname}/node_modules/prettier`)).toBe(true);
+    });
+
+    test("returns false for absolute non node_modules import path", () => {
+      expect(isNodeModulesImport(".", `${__dirname}/index.js`)).toBe(false);
+    });
   });
 
   describe("for a file outside project", () => {
@@ -38,6 +46,14 @@ describe("isNodeModulesImport", () => {
 
     test("returns true for relative node_modules import path", () => {
       expect(isNodeModulesImport("../index.js", "./is-node-modules-import/node_modules/prettier")).toBe(true);
+    });
+
+    test("returns true for absolute node_modules import path", () => {
+      expect(isNodeModulesImport("../index.js", `${__dirname}/node_modules/prettier`)).toBe(true);
+    });
+
+    test("returns false for absolute non node_modules import path", () => {
+      expect(isNodeModulesImport("../index.js", `${__dirname}/index.js`)).toBe(false);
     });
   });
 });

@@ -12,9 +12,10 @@ function isNodeModulesImport(filePath, importPath) {
   });
 
   return nodeModulesPaths.some((nodeModulesPath) => {
+    const nodeModulesImportResolvedPath = path.resolve(nodeModulesPath, importPath);
     return (
       (fs.existsSync(importedFilePath) && importedFilePath.startsWith(nodeModulesPath)) ||
-      fs.existsSync(path.resolve(nodeModulesPath, importPath))
+      (fs.existsSync(nodeModulesImportResolvedPath) && nodeModulesImportResolvedPath.includes("node_modules"))
     );
   });
 }
