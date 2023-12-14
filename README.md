@@ -1,7 +1,7 @@
 # is-node-modules-import
 
 [![npm version](https://img.shields.io/npm/v/is-node-modules-import?logo=npm&logoColor=fff)](https://www.npmjs.com/package/is-node-modules-import)
-![npm](https://img.shields.io/npm/dm/is-node-modules-import)
+[![npm downloads](https://img.shields.io/npm/dm/is-node-modules-import)](https://www.npmjs.com/package/is-node-modules-import)
 
 Check, if for a given file, an import is a node_modules import.
 
