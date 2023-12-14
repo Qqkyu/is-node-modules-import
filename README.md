@@ -33,7 +33,7 @@ Import the function using `require`:
 const isNodeModulesImport = require('is-node-modules-import');
 ```
 
-`isNodeModulesImport` expects a file path as the first argument, and an import path as the second one. For example:
+`isNodeModulesImport` expects a file path as the first argument and an import path as the second one. For example:
 
 ```
 isNodeModulesImport('index.js', 'prettier');
@@ -54,9 +54,9 @@ This means, that if you have a project with the following structure:
 - index.js
 ```
 
-Then running `isNodeModulesImport` on `index.js` file will not only check `node_modules` on this level (with `react` and `eslint`). It will check also any `node_modules` directories further down the file tree.
+Then running `isNodeModulesImport` on the `index.js` file will not only check `node_modules` on this level (with `react` and `eslint`). It will check also any `node_modules` directories further down the file tree.
 
-So if you had `node_modules` directory with `prettier` installed in the root of your system, then the function will return `true`.
+So if you had a `node_modules` directory with `prettier` installed in the root of your system, then the function will return `true`.
 
 ## Tested cases
 
@@ -73,9 +73,9 @@ Using "prettier" as an example:
 
 ### Absolute node_modules imports
 
-- `import <X> from "home/user/.../prettier"
-- `import <X> from "home/user/.../node_modules/prettier"
+- `import <X> from "home/user/.../prettier"`
+- `import <X> from "home/user/.../node_modules/prettier"`
 
 ### Non-existent node_modules
 
-If you provide an import path with a file from `node_modules` which doesn't exists, the function will return false.
+If you provide an import path with a file from `node_modules` which doesn't exist, the function will return false.
