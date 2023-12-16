@@ -23,10 +23,13 @@
   "keywords": [
     "import",
     "require",
+    "module",
     "modules",
     "commonjs",
     "node",
-    "nodejs"
+    "nodejs",
+    "is",
+    "node_modules"
   ],
   "devDependencies": {
     "jest": "29.7.0",
