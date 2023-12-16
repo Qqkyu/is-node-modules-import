@@ -17,7 +17,7 @@
     "url": "https://github.com/Qqkyu/is-node-modules-import/issues"
   },
   "engines": {
-    "node": "^18.6.0 || >=16.17.0"
+    "node": ">=15"
   },
   "homepage": "https://github.com/Qqkyu/is-node-modules-import",
   "keywords": [
