@@ -2,7 +2,7 @@
   "name": "is-node-modules-import",
   "author": "Michał Kuliński <m.kulinskik@gmail.com>",
   "license": "MIT",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Check, if an import path in a given file is a node_modules import",
   "main": "index.js",
   "types": "index.d.ts",
