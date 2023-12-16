@@ -5,6 +5,7 @@
   "version": "1.0.1",
   "description": "Check, if an import path in a given file is a node_modules import",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "jest"
   },
