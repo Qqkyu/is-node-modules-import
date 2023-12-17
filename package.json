@@ -1,6 +1,6 @@
 {
   "name": "is-node-modules-import",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Check, if an import path in a given file is a node_modules import",
   "license": "MIT",
   "homepage": "https://github.com/Qqkyu/is-node-modules-import#readme",
