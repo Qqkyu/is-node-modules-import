@@ -1,6 +1,6 @@
 {
   "name": "is-node-modules-import",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Check, if an import path in a given file is a node_modules import",
   "license": "MIT",
   "homepage": "https://github.com/Qqkyu/is-node-modules-import#readme",
@@ -13,8 +13,8 @@
     "email": "m.kulinskik@gmail.com"
   },
   "exports": {
-    "types": "index.d.ts",
-    "default": "index.js"
+    "types": "./index.d.ts",
+    "default": "./index.js"
   },
   "sideEffects": false,
   "engines": {
